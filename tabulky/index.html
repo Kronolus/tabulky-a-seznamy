@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seznamy a tabulky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+    <header>
+        <h1>Seznamy a tabulky</h1>
+    </header>
+
+    <main>
+
+        <section class="block">
+            <div class="section-title">Tvorba seznamů</div>
+
+            <h2>Uspořádaný seznam (ordered list)</h2>
+            <ol>
+                <li>Google Chrome</li>
+                <li>Internet Explorer</li>
+                <li>Mozilla Firefox</li>
+            </ol>
+        </section>
+
+        <section class="block">
+            <h2>Neuspořádaný seznam (unordered list)</h2>
+            <ul>
+                <li>IP adresy (např. IPv4: 192.168.23.1)</li>
+                <li>DNS adresy (např. strojka.opava.cz)</li>
+                <li>URL adresy (např. http://moodle.sspu-opava.cz)</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2>Vnořený seznam</h2>
+
+            <ul>
+                <li>
+                    Hardware
+                    <ol type="I">
+                        <li>
+                            Základní jednotka
+                            <ol type="a">
+                                <li>Procesor (CPU)</li>
+                                <li>Paměť (RAM)</li>
+                                <li>Pevný disk (HDD)</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Vstupní zařízení
+                            <ol type="a">
+                                <li>Klávesnice</li>
+                                <li>Myš</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Výstupní zařízení
+                            <ol type="a">
+                                <li>Monitor</li>
+                                <li>Tiskárna</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    Software
+                    <ol type="I">
+                        <li>
+                            Základní programové vybavení
+                            <ol type="a">
+                                <li>Operační systém</li>
+                                <li>Ovladač</li>
+                                <li>Firmware</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Aplikace
+                            <ol type="a">
+                                <li>Textový editor</li>
+                                <li>Prohlížeč</li>
+                                <li>Antivirový program</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+<section class="block">
+    <h2>Popisný seznam</h2>
+
+    <dl>
+        <dt><strong>Internet Society (ISOC)</strong></dt>
+        <dd>Mezinárodní organizace pro globální koordinaci internetu.</dd>
+
+        <dt><strong>World Wide Web Consortium (W3C)</strong></dt>
+        <dd>Konsorcium vyvíjející webové standardy.</dd>
+
+        <dt><strong>Internet Assigned Numbers Authority (IANA)</strong></dt>
+        <dd>Správa IP adres a DNS.</dd>
+    </dl>
+</section>
+
+    <section class="block">
+        <h2>Tvorba tabulek</h2>
+
+        <p class="table-note">
+            Komplexní tabulka v HTML může být tvořena záhlavím, tělem a zápatím. Pomocí atributů colspan a rowspan můžeme vytvořit sloučené buňky, které přesahují přes více sloupců i řádků.
+        </p>
+
+        <table class="study-table">
+            <caption>Studijní obory na SŠPU Opava – školní rok 2016/17</caption>
+
+            <thead>
+                <tr>
+                    <th>Název oboru</th>
+                    <th>Kód oboru</th>
+                    <th>Počet tříd</th>
+                    <th colspan="3">Počty žáků</th>
+                </tr>
+                <tr class="subhead">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Chlapci</th>
+                    <th>Dívky</th>
+                    <th>Celkem</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Informační technologie</td>
+                    <td>18-20-M/01</td>
+                    <td>4</td>
+                    <td>104</td>
+                    <td>1</td>
+                    <td>105</td>
+                </tr>
+
+                <tr>
+                    <td>Strojírenství</td>
+                    <td>23-41-M/01</td>
+                    <td>5</td>
+                    <td>135</td>
+                    <td>1</td>
+                    <td>136</td>
+                </tr>
+
+                <tr>
+                    <td>Umělecké obory</td>
+                    <td>82-41-M/04, 82-41-M/05, 82-41-M/08</td>
+                    <td>4</td>
+                    <td>20</td>
+                    <td>74</td>
+                    <td>94</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Celkové údaje</td>
+                    <td>13 tříd</td>
+                    <td colspan="3">335 žáků</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Moje stránka</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
